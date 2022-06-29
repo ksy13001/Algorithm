@@ -14,7 +14,7 @@ if a >= 5:
  else:
   print('fail')
  //////////////// 
- -> print('pass' if a>=0 else: 'fail')
+ -> print('pass' if a>=0 else 'fail')
  //////////////// if else
  a = 5
 if a >= 5:
@@ -24,7 +24,7 @@ elif a<3:
 else:
   print('fail')
   ///////////////
-  ->print('pass' if a>=5 else: 'pass1' if a<3 else: 'fail')
+  ->print('pass' if a>=5 else 'pass1' if a<3 else 'fail')
  
 #3 for, if 한줄로 입력
   a = list(range(10))
