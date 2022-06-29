@@ -1,0 +1,38 @@
+#1 한줄로 입력받기(리스트 안에 for문) - 간단한 경우만
+////////////////////
+list_a
+for i in range(10):
+  a.append(i)
+////////////////////
+-> list_a = [i for i in range(10)]
+-> list_a = list(range(10))
+
+#2 if문 한줄로 입력
+a = 5
+if a >= 5:
+  print('pass')
+ else:
+  print('fail')
+ //////////////// 
+ -> print('pass' if a>=0 else: 'fail')
+ //////////////// if else
+ a = 5
+if a >= 5:
+  print('pass')
+elif a<3:
+  print('pass1')
+else:
+  print('fail')
+  ///////////////
+  ->print('pass' if a>=5 else: 'pass1' if a<3 else: 'fail')
+ 
+#3 for, if 한줄로 입력
+  a = list(range(10))
+  b = []
+   for i in a:  
+    if  i > 5
+      b.append(i)
+   ///////////////
+   -> b = [i for i in a if i > 5]
+   
+   
