@@ -23,15 +23,11 @@ def dijkstra(start):
     distance[start] = 0
     while q:
         dist, now = heapq.heappop(q)
-        print("*" * 30)
-        print("현재 노드 : ", now)
-        print("현재 최소거리 : ", dist)
+        #이미 방문한 노드인 경우
         if distance[now] < dist:
-            print("이미 방문한 노드입니다")
             continue
         for i in graph[now]:
-            print("현재 노드 주변 노드 : ", i)
-            print("현재 노드 주변 노드 거리: ", i[1])
+            #i[1] : 현재 노드의 주변 노드, i[0] : 주변 노드들 까지의 거리
             cost = dist + i[1]
             print("주변노드 거리 + 현재최소거리 : ", cost)
             #cost 가 최소거리 테이블 값보다 작을경우 푸시
