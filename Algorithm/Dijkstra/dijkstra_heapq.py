@@ -19,7 +19,7 @@ for _ in range(m):
 
 def dijkstra(start):
     q = []
-    heapq.heappush(q, (0, start))
+    heapq.heappush(q, (0, start))   #(거리, 노드) 순으로 넣는 이유 : 힙큐에서는 첫번째 요소에 따라 정렬, 우리는 거리순으로 정렬해야 하기 때문
     distance[start] = 0
     while q:
         dist, now = heapq.heappop(q)
