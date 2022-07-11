@@ -14,7 +14,8 @@ distance = [INF] * (n + 1)
 for _ in range(m):
     a, b, c = map(int, input().split())
     graph[a].append((b, c))
-
+    #양방향일경우
+    #graph[b].append((a, c))
 
 def dijkstra(start):
     q = []
