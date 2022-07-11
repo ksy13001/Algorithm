@@ -14,7 +14,7 @@ distance = [INF] * (n + 1)
 for _ in range(m):
     a, b, c = map(int, input().split())
     graph[a].append((b, c))
-    #양방향일경우
+    #양방향이고 값이 같을때 
     #graph[b].append((a, c))
 
 def dijkstra(start):
