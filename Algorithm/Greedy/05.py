@@ -6,3 +6,4 @@ for i in range(n):
         if weight[j] != weight[i]:
             cnt += 1
 print(cnt)
+#풀이 2
