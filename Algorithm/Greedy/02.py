@@ -8,5 +8,4 @@ for i in s:
         result += i
     else:
         result *= i
-
 print(result)
