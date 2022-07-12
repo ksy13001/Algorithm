@@ -10,5 +10,4 @@ while mo:
         if i in mo:
             mo.remove(i)
     group += 1
-
 print(group)
