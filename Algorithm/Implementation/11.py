@@ -53,3 +53,4 @@ while True:
     snake.append((cur[0] + cur_dir[i][0], cur[1] + cur_dir[i][1]))
     print('snake : ',*snake)
     time += 1
+ 
