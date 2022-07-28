@@ -20,7 +20,8 @@ def dfs(graph, v, visited):
         if not visited[i]:
             dfs(graph, i, visited)
 
-#모든 간선값이 같을때 bfs 고려
+#모든 간선값이 같을때 or 최단거리, 최소
+#큐를 미리 채워도 됨, 큐에 좌표가아닌 다른 조건이 들어갈수도 있음
 def bfs(graph, v, visited):
     que = deque([v])
     visited[v] = True
