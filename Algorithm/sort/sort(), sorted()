@@ -1,0 +1,5 @@
+#sorted()
+sorted(<list> , key = <function> , reverse = <bool>) -> 원본 정렬 x, 정렬 값 반환
+
+#sort()
+<list>.sort(key = <function>, reverse = <bool>) -> 원본자체 수정, 반환값 none
