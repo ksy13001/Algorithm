@@ -3,3 +3,7 @@ sorted(<list> , key = <function> , reverse = <bool>) -> 원본 정렬 x, 정렬 
 
 #sort()
 <list>.sort(key = <function>, reverse = <bool>) -> 원본자체 수정, 반환값 none
+
+#key 여러개
+(오름차순은 부호 +, 내림차순 부호 -)
+sorted(<list> , key = lamda x : (x[0], x[1]) , reverse = <bool>) 
