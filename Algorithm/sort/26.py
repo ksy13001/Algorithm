@@ -1,5 +1,5 @@
 import heapq
-
+#정렬문제에 우선순위 큐 생각
 n = int(input())
 q = []
 result = 0
