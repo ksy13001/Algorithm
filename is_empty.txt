@@ -1,0 +1,8 @@
+array = []
+#bad
+if len(array) == 0:
+  print("empty")
+  
+#----------->
+if not array:
+  print("empty")
