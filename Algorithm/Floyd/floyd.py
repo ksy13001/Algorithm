@@ -12,8 +12,7 @@ for i in range(1, n + 1):
 
 for _ in range(m):
     a, b, c = map(int, input().split())
-    graph[a][b] = c
-
+    graph[a][b] = c # 두 노드를 연결하는 노선이 하나 이상일 경우 -> min(c, graph[a][b])
 #현재 선택된 노드 k
 for k in range(1, n + 1):
     for i in range(1, n + 1):
