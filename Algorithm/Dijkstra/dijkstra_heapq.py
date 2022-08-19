@@ -14,7 +14,7 @@ distance = [INF] * (n + 1)
 for _ in range(m):
     a, b, c = map(int, input().split())
     graph[a].append((b, c))
-    #양방향이고 값이 같을때 
+    #양방향이고 값이 같을때
     #graph[b].append((a, c))
 
 def dijkstra(start):
@@ -27,7 +27,7 @@ def dijkstra(start):
         if distance[now] < dist:
             continue
         for i in graph[now]:
-            #i[1] : 현재 노드의 주변 노드, i[0] : 주변 노드들 까지의 거리
+            # i[1] -> graph 에서 거리이기 때문
             cost = dist + i[1]
             print("주변노드 거리 + 현재최소거리 : ", cost)
             #cost 가 최소거리 테이블 값보다 작을경우 푸시
