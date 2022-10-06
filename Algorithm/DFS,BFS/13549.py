@@ -12,7 +12,7 @@ def bfs(n):
         now, cnt = q.popleft()
         if now == k:
             return cnt
-        for i in (now * 2, now + 1, now - 1):
+        for i in (now * 2, now - 1, now + 1):   #반복문 순서 주의!!!
             if 0 <= i < 100001:
                 if not visited[i]:
                     if i == now * 2:
