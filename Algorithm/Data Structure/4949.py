@@ -21,9 +21,7 @@ while True:
                 d.pop()
             else:
                 flag = -1
-    if d:
-        flag = -1
-    if flag == 0:
+    if flag == 0 and not d:
         print('yes')
     else:
         print('no')
