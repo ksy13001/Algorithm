@@ -22,7 +22,7 @@ def dijkstra(tx, ty):
             ny = y + dy[i]
             if 0 <= nx < n and 0 <= ny < n:
                 if graph[nx][ny] == 0:
-                    now_wall += 1
+                    cost = now_wall + 1
                 else:
                     cost = now_wall
                 if cost < wall[nx][ny]:
