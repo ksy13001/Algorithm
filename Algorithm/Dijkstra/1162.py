@@ -1,7 +1,7 @@
 import heapq
 import sys
 input = sys.stdin.readline
-INF = sys.maxsize
+INF = sys.maxsize #int(1e9) 사용 x
 n, p, k = map(int, input().split())
 graph = [[]for _ in range(n+1)]
 distance = [[INF for _ in range(k+1)]for _ in range(n+1)]
