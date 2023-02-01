@@ -13,4 +13,4 @@ for i in range(n):
         index = bisect.bisect_left(ans, arr[i])
         ans[index] = arr[i]
         
-print(ans)
+print(len(ans))
