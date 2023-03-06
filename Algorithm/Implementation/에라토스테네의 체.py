@@ -9,7 +9,7 @@ import math
 
 n = int(input())
 arr = [True] * (n + 1) #n 까지 자연수 소수로 두기
-
+arr[0], arr[1] = False, False # 0,1 은 소수 x
 for i in range(2, int(math.sqrt(n))+1): # 2 ~ n 까지
   if arr[i]: # i가 소수면
     j = 2
