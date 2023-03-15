@@ -1,3 +1,5 @@
+import math
+
 def com(n, k):
     dp = [[0 for _ in range(n+1)]for _ in range(n+1)]
     for i in range(n+1):
@@ -11,3 +13,4 @@ def com(n, k):
 
 n, m = map(int, input().split())
 print(com(n, m))
+#print(math.comb(n, m)) 
