@@ -13,7 +13,7 @@ def dfs(x, y, st):
         if st == 'ori':
             if 0 <= nx < n and 0 <= ny < n and not visited[nx][ny] and graph[nx][ny] == graph[x][y]:
                 dfs(nx, ny, 'ori')
-        else:
+        else: 
             if 0 <= nx < n and 0 <= ny < n and not visited[nx][ny]:
                 if graph[x][y] == 'G' or graph[x][y] == 'R':
                     if graph[nx][ny] != 'B':
