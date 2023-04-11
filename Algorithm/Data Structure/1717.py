@@ -1,3 +1,7 @@
+"""
+서로소 집합 알고리즘 - > 두 원소가 한 집합에 속하는지 판별
+"""
+
 import sys
 input = sys.stdin.readline
 sys.setrecursionlimit(10**6)
