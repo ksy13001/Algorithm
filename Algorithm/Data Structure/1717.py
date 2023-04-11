@@ -28,5 +28,5 @@ for _ in range(m):
             print('YES')
         else:
             print('NO')
-
+ 
 
