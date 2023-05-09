@@ -10,7 +10,7 @@ while i < m-1:
         i += 2
         if cnt >= n:
             ans += 1
-    else:
+    else:  
         cnt = 0
         i += 1
 
