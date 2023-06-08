@@ -23,6 +23,18 @@ def com(arr, idx, k):
             visited[i] = True
             com(arr + [ori[i]], i, k)
             visited[i] = False
+           
+        
+#중복순열
+def btr(arr, k):
+    if len(arr) == k:
+        print(*arr)
+        return arr
+    for i in range(1, n+1):
+        arr.append(i)
+        btr(arr, k)
+        arr.pop()
+
 
 per([], 2)
 print()
