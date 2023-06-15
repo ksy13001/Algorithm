@@ -4,7 +4,8 @@ input = sys.stdin.readline
 dx = [-1, 0, 1, 0]
 dy = [0, -1, 0, 1]
 
-
+# 벽 먼저 만든후 넓이 계산x
+# 수위를 1칸씩 높이면서 깊이 계산, 넘칠 경우 ans += cnt x
 def bfs(sx, sy, k):
     global ans
     q = deque([(sx, sy)])
