@@ -3,7 +3,7 @@
 2401 1 1
 """
 
-
+"""
 def cal(n):
     global year, month, day
     if month in (1, 3, 5, 7, 8, 10, 12) and day == 32:
@@ -48,3 +48,12 @@ else:
         else:
             cal(30)
         cnt += 1
+"""
+#datetime 사용
+import datetime as dt
+year, month, day = map(int, input().split())
+ty, tm, td = map(int, input().split())
+if (ty - year == 1000 and tm >= month and td >= day )or ty - year > 1000:
+    print('gg')
+else:
+    print(f'D-{(dt.datetime(ty, tm, td) - dt.datetime(year, month, day)).days}')
