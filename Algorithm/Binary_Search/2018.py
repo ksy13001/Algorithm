@@ -9,7 +9,7 @@ while start < end < n:
     if now < n:
         end += 1
         now += end
-    elif now > n:A
+    elif now > n:
         now -= start
         start += 1
     else:
