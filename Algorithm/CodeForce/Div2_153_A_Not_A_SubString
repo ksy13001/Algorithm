@@ -1,0 +1,24 @@
+import sys
+INF = sys.maxsize
+input = sys.stdin.readline
+
+
+def sol():
+    st = input()
+    s = list(st.rstrip())
+    n = len(s)
+    if s == ['(',')']:
+        print('NO')
+        return
+    else:
+        print('YES')
+        for i in range(n-1):
+            if s[i] == s[i+1]:
+                print('()'*n)
+                return
+        print('('*n+')'*n)
+    return
+
+
+for _ in range(int(input())):
+    sol()
