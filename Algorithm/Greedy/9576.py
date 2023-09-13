@@ -12,9 +12,6 @@ def sol():
             if i not in visited:
                 visited.append(i)
                 break
-            if len(visited) == n:
-                print(n)
-                return
     print(len(visited))
     return
 
