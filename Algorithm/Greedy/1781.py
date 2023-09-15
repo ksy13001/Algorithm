@@ -6,7 +6,7 @@ input = sys.stdin.readline
 
 def sol():
     n = int(input())
-    arr = []
+    arr = [] 
     q = []
     for _ in range(n):
         d, c = map(int, input().split())
