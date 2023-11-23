@@ -1,5 +1,5 @@
 import sys
-from collections import deque
+from collections import deque 
 INF = sys.maxsize
 input = sys.stdin.readline
 n, s, e, m = map(int, input().split())
