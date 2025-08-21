@@ -8,6 +8,7 @@ class Solution:
             dp[1][i] = dp[0][i-1]
         return dp[0][-1]
 
+# 굳이 배열 안써도 되는 경우 - 열이 2개일때
 class Solution1(object):
     def rob(self, nums):
         rob_not_pre, rob_pre = 0, 0
