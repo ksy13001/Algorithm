@@ -13,4 +13,4 @@ for end in range(k, n+1):
     while end - start >= k and prefix_sum[end] - prefix_sum[start] >= m:
         ans += 1
         start += 1
-print(ans)
+print(ans) 
